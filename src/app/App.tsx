@@ -1,0 +1,23 @@
+import { Navigation } from './components/Navigation';
+import { Hero } from './components/Hero';
+import { FeaturedProjects } from './components/FeaturedProjects';
+import { ExperienceHighlights } from './components/ExperienceHighlights';
+import { AcademicProjects } from './components/AcademicProjects';
+import { About } from './components/About';
+import { Resume } from './components/Resume';
+import { Contact } from './components/Contact';
+
+export default function App() {
+  return (
+    <div className="min-h-screen bg-[#fafaf9]">
+      <Navigation />
+      <Hero />
+      <FeaturedProjects />
+      <ExperienceHighlights />
+      <AcademicProjects />
+      <About />
+      <Resume />
+      <Contact />
+    </div>
+  );
+}

@@ -1,0 +1,27 @@
+/* Custom carousel styles */
+.project-carousel .slick-dots li button:before {
+  display: none;
+}
+
+.project-carousel .slick-dots li {
+  margin: 0 4px;
+}
+
+.project-carousel .slick-dots li div {
+  width: 8px;
+  height: 8px;
+}
+
+.project-carousel .slick-dots li.slick-active div {
+  background-color: #1a1a1a;
+  width: 24px;
+  transition: all 0.3s ease;
+}
+
+.project-carousel .slick-slide > div {
+  outline: none;
+}
+
+.project-carousel .slick-list {
+  border-radius: 1rem;
+}
