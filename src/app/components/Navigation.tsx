@@ -33,7 +33,7 @@ export function Navigation() {
           Venessa Tan
         </button>
 
-        <div className="flex gap-8 text-[#4a4a4a]">
+        <div className="flex gap-4 md:gap-8 text-sm md:text-base text-[#4a4a4a]">
           <button
             onClick={() => scrollToSection('projects')}
             className="hover:text-[#1a1a1a] transition-colors"

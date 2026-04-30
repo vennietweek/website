@@ -11,22 +11,23 @@ export function About() {
           viewport={{ once: true }}
           className="space-y-8"
         >
-          <h2 className="text-4xl tracking-tight text-[#1a1a1a]">About</h2>
+          <h2 className="text-3xl md:text-4xl tracking-tight text-[#1a1a1a]">About</h2>
 
-          <div className="space-y-6 text-lg text-[#4a4a4a] leading-relaxed">
+          <div className="space-y-6 text-base md:text-lg text-[#4a4a4a] leading-relaxed">
             <p>
-              I'm interested in products that improve clarity — helping users make better decisions,
-              teams work more effectively, and people better understand themselves.
+              I'm a Product Manager with 4 years of experience building B2B and consumer products from discovery to launch.
             </p>
 
             <p>
-              My approach combines strategic product thinking with technical execution. I believe
-              the best products come from deeply understanding both user needs and technical constraints,
-              then finding elegant solutions at their intersection.
+              I work close to the system—translating product ideas into something concrete through prototyping, experimentation, and working directly with technical workflows. My recent work focuses on AI systems, including RAG pipelines, agentic workflows, and LLM evaluation.
+            </p>
+
+            <p>
+              Recently, I've been exploring this through projects like Innerra, where I'm experimenting with memory, reflection, and how conversational systems evolve over time.
             </p>
 
             <p className="text-[#6a6a6a]">
-              Outside work: ballet, yoga, photography, travel, observation, and design sensitivity.
+              Outside of work, I spend time on yoga, ballet, photography, and travel.
             </p>
           </div>
         </motion.div>

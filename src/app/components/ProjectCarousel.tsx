@@ -56,46 +56,46 @@ export function ProjectCarousel({ images }: ProjectCarouselProps) {
   const renderMedia = (src: string, alt: string) => {
     if (isVideo(src)) {
       return (
-        <video
-          src={src}
-          className="w-full h-[600px] object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
+        <div className="relative aspect-[9/16] rounded-2xl overflow-hidden">
+          <video
+            src={src}
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
       );
     }
     return (
-      <img
-        src={src}
-        alt={alt}
-        className="w-full h-[600px] object-cover"
-      />
+      <div className="relative aspect-[9/16] rounded-2xl overflow-hidden">
+        <img
+          src={src}
+          alt={alt}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </div>
     );
   };
 
   if (images.length === 0) {
     return (
-      <div className="flex items-center justify-center bg-gradient-to-br from-[#f5f5f5] to-[#e5e5e5] rounded-2xl min-h-[400px]">
+      <div className="flex items-center justify-center bg-gradient-to-br from-[#f5f5f5] to-[#e5e5e5] rounded-2xl aspect-[9/16]">
         <div className="text-center text-[#8a8a8a] text-sm">Add images to /public/assets</div>
       </div>
     );
   }
 
   if (images.length === 1) {
-    return (
-      <div className="rounded-2xl overflow-hidden">
-        {renderMedia(images[0], 'Project')}
-      </div>
-    );
+    return renderMedia(images[0], 'Project');
   }
 
   return (
-    <div className="rounded-2xl overflow-hidden project-carousel">
+    <div className="project-carousel">
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index}>
+          <div key={index} className="px-0">
             {renderMedia(image, `Project image ${index + 1}`)}
           </div>
         ))}

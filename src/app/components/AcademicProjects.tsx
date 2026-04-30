@@ -64,8 +64,7 @@ export function AcademicProjects() {
               </div>
               <Button
                 asChild
-                variant="outline"
-                className="border-[#d4d4d4] text-[#1a1a1a] hover:bg-[#f5f5f5] rounded-full w-full"
+                className="bg-[#1a1a1a] text-white hover:bg-[#2a2a2a] rounded-xl w-full"
               >
                 <a href={project.pdf} download>
                   <Download className="mr-2 size-4" />

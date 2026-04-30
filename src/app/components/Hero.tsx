@@ -15,18 +15,16 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-7xl tracking-tight mb-6 text-[#1a1a1a]">
+          <h1 className="text-5xl md:text-7xl tracking-tight mb-6 text-[#1a1a1a]">
             Venessa Tan
           </h1>
 
-          <p className="text-2xl text-[#4a4a4a] mb-8 max-w-2xl mx-auto">
-            Product Manager building AI-powered products and scalable digital experiences.
+          <p className="text-xl md:text-2xl text-[#4a4a4a] mb-8 max-w-2xl mx-auto">
+            Product Manager building AI-powered products
           </p>
 
-          <p className="text-lg text-[#6a6a6a] leading-relaxed mb-12 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-[#6a6a6a] leading-relaxed mb-12 max-w-3xl mx-auto">
             I work across product strategy, experimentation, and technical execution — from 0→1 product development to lifecycle optimisation and AI-powered workflows.
-            <br /><br />
-            Previously at Coffee Meets Bagel, GIC, and Vouch.
             <br /><br />
             Currently building <span className="text-[#1a1a1a] font-medium">Innerra</span> — a quiet companion for turning everyday thoughts into calm, structured emotional insight over time.
           </p>
@@ -34,7 +32,7 @@ export function Hero() {
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <Button
               onClick={() => scrollToSection('projects')}
-              className="bg-[#1a1a1a] text-white hover:bg-[#2a2a2a] px-8 py-6 rounded-full"
+              className="bg-[#1a1a1a] text-white hover:bg-[#2a2a2a] px-8 py-6 rounded-xl text-base"
             >
               View Projects
             </Button>
@@ -42,7 +40,7 @@ export function Hero() {
             <Button
               variant="outline"
               onClick={() => scrollToSection('resume')}
-              className="border-[#d4d4d4] text-[#1a1a1a] hover:bg-[#f5f5f5] px-8 py-6 rounded-full"
+              className="border-[#d4d4d4] text-[#1a1a1a] hover:bg-[#f5f5f5] px-8 py-6 rounded-xl text-base"
             >
               Resume
             </Button>
@@ -50,7 +48,7 @@ export function Hero() {
             <Button
               variant="outline"
               asChild
-              className="border-[#d4d4d4] text-[#1a1a1a] hover:bg-[#f5f5f5] px-8 py-6 rounded-full"
+              className="border-[#d4d4d4] text-[#1a1a1a] hover:bg-[#f5f5f5] px-8 py-6 rounded-xl text-base"
             >
               <a href="https://www.linkedin.com/in/venessa-tan-wk/" target="_blank" rel="noopener noreferrer">
                 LinkedIn
@@ -60,7 +58,7 @@ export function Hero() {
             <Button
               variant="outline"
               onClick={() => scrollToSection('contact')}
-              className="border-[#d4d4d4] text-[#1a1a1a] hover:bg-[#f5f5f5] px-8 py-6 rounded-full"
+              className="border-[#d4d4d4] text-[#1a1a1a] hover:bg-[#f5f5f5] px-8 py-6 rounded-xl text-base"
             >
               Contact
             </Button>

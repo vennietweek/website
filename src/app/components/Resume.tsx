@@ -7,26 +7,32 @@ export function Resume() {
     {
       company: 'Innerra',
       role: 'Founder & Product Lead',
-      period: '2025 — Present',
+      period: '2026 — Present',
       description: 'Building a personal AI companion for reflection and emotional insight.'
     },
     {
+      company: 'Coffee Meets Bagel',
+      role: 'Lifecycle Product Manager',
+      period: 'Dec 2025 — Feb 2026',
+      description: 'Owned lifecycle experimentation across onboarding and monetisation funnels, running A/B tests to optimise conversion and revenue.'
+    },
+    {
       company: 'GIC',
-      role: 'Product Manager',
-      period: '2023 — 2024',
+      role: 'Product Developer Intern',
+      period: 'May 2024 — Sep 2024',
       description: 'Built enterprise RAG knowledge assistant for internal onboarding and knowledge search.'
+    },
+    {
+      company: 'The Pique Lab',
+      role: 'Product Management Intern',
+      period: 'May 2023 — Jul 2023',
+      description: 'Defined and rolled out the company\'s first access control framework, replacing ad-hoc permissions with standardized access rules across all modules.'
     },
     {
       company: 'Vouch',
       role: 'Product Manager',
-      period: '2021 — 2023',
+      period: 'Oct 2019 — Dec 2022',
       description: 'Led digital ticketing and AI visitor experiences across museums and attractions.'
-    },
-    {
-      company: 'Coffee Meets Bagel',
-      role: 'Product Manager',
-      period: '2019 — 2021',
-      description: 'Led lifecycle experimentation and A/B testing to optimize user engagement.'
     }
   ];
 
@@ -40,12 +46,12 @@ export function Resume() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-4xl tracking-tight text-[#1a1a1a]">Experience</h2>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+            <h2 className="text-3xl md:text-4xl tracking-tight text-[#1a1a1a]">Experience</h2>
             <Button
               asChild
               variant="outline"
-              className="border-[#d4d4d4] text-[#1a1a1a] hover:bg-[#f5f5f5] px-6 py-5 rounded-full"
+              className="border-[#d4d4d4] text-[#1a1a1a] hover:bg-[#f5f5f5] px-6 py-5 rounded-xl self-start sm:self-auto"
             >
               <a href="/documents/Venessa_Tan_Resume.pdf" download>
                 <Download className="mr-2 size-4" />
@@ -68,8 +74,8 @@ export function Resume() {
               <div className="relative">
                 <div className="absolute -left-[41px] top-1 size-4 rounded-full bg-[#1a1a1a] border-4 border-white" />
                 <div className="text-sm text-[#8a8a8a] mb-2">{exp.period}</div>
-                <h3 className="text-2xl text-[#1a1a1a] mb-1">{exp.role}</h3>
-                <div className="text-lg text-[#4a4a4a] mb-3">{exp.company}</div>
+                <h3 className="text-xl md:text-2xl text-[#1a1a1a] mb-1">{exp.role}</h3>
+                <div className="text-base md:text-lg text-[#4a4a4a] mb-3">{exp.company}</div>
                 <p className="text-base text-[#6a6a6a] leading-relaxed">
                   {exp.description}
                 </p>

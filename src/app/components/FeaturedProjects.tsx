@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { ProjectCarousel } from './ProjectCarousel';
 import { Button } from './ui/button';
-import { Download } from 'lucide-react';
+import { Download, ExternalLink } from 'lucide-react';
 
 export function FeaturedProjects() {
   return (
@@ -28,11 +28,8 @@ export function FeaturedProjects() {
           viewport={{ once: true }}
           className="mb-32 bg-white rounded-3xl overflow-hidden border border-[#e5e5e5] shadow-sm hover:shadow-lg transition-shadow duration-300"
         >
-          <div className="grid md:grid-cols-2 gap-12 p-12 md:p-16">
-            <div className="space-y-6">
-              <div className="inline-block px-4 py-1.5 bg-[#f5f5f5] rounded-full text-sm text-[#4a4a4a]">
-                Current Project
-              </div>
+          <div className="grid md:grid-cols-5 gap-8 p-6 md:gap-12 md:p-16">
+            <div className="md:col-span-3 space-y-6">
               <h3 className="text-4xl tracking-tight text-[#1a1a1a]">Innerra</h3>
               <p className="text-xl text-[#4a4a4a] leading-relaxed">
                 A personal AI companion for reflection, memory, and emotional insight.
@@ -50,14 +47,25 @@ export function FeaturedProjects() {
                   ))}
                 </div>
               </div>
+              <Button
+                asChild
+                className="mt-2 bg-[#1a1a1a] text-white hover:bg-[#2a2a2a] rounded-xl"
+              >
+                <a href="https://innerra.vercel.app" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-2 size-4" />
+                  Try Innerra
+                </a>
+              </Button>
             </div>
-            <ProjectCarousel images={[
-              '/assets/innerra_1.PNG',
-              '/assets/innerra_2.PNG',
-              '/assets/innerra_3.PNG',
-              '/assets/innerra_4.PNG',
-              '/assets/innerra_5.PNG'
-            ]} />
+            <div className="mx-auto w-[200px] md:w-[240px] md:col-span-2">
+              <ProjectCarousel images={[
+                '/assets/innerra_1.PNG',
+                '/assets/innerra_2.PNG',
+                '/assets/innerra_3.PNG',
+                '/assets/innerra_4.PNG',
+                '/assets/innerra_5.PNG'
+              ]} />
+            </div>
           </div>
         </motion.div>
 
@@ -69,7 +77,7 @@ export function FeaturedProjects() {
           viewport={{ once: true }}
           className="mb-16 bg-white rounded-3xl overflow-hidden border border-[#e5e5e5] hover:border-[#d4d4d4] transition-all duration-300"
         >
-          <div className="grid md:grid-cols-5 gap-8 p-12">
+          <div className="grid md:grid-cols-5 gap-8 p-6 md:p-12">
             <div className="md:col-span-3 space-y-6">
               <h3 className="text-3xl tracking-tight text-[#1a1a1a]">
                 Internal RAG Knowledge Assistant
@@ -91,8 +99,7 @@ export function FeaturedProjects() {
               </div>
               <Button
                 asChild
-                variant="outline"
-                className="mt-4 border-[#d4d4d4] text-[#1a1a1a] hover:bg-[#f5f5f5] rounded-full"
+                className="mt-4 bg-[#1a1a1a] text-white hover:bg-[#2a2a2a] rounded-xl"
               >
                 <a href="/documents/Enhancing New Hire Onboarding with Retrieval-Augmented Generation.pdf" download>
                   <Download className="mr-2 size-4" />
@@ -100,7 +107,7 @@ export function FeaturedProjects() {
                 </a>
               </Button>
             </div>
-            <div className="md:col-span-2">
+            <div className="mx-auto w-[200px] md:w-[240px] md:col-span-2">
               <ProjectCarousel images={[
                 '/assets/gic_1.png',
                 '/assets/gic_2.png'
@@ -117,7 +124,7 @@ export function FeaturedProjects() {
           viewport={{ once: true }}
           className="mb-16 bg-white rounded-3xl overflow-hidden border border-[#e5e5e5] hover:border-[#d4d4d4] transition-all duration-300"
         >
-          <div className="grid md:grid-cols-5 gap-8 p-12">
+          <div className="grid md:grid-cols-5 gap-8 p-6 md:p-12">
             <div className="md:col-span-3 space-y-6">
               <h3 className="text-3xl tracking-tight text-[#1a1a1a]">
                 Digital Ticketing Platform
@@ -150,8 +157,8 @@ export function FeaturedProjects() {
                 ))}
               </div>
             </div>
-            <div className="md:col-span-2">
-              <ProjectCarousel images={['/assets/digital_ticketing.png']} />
+            <div className="mx-auto w-[200px] md:w-[240px] md:col-span-2">
+              <ProjectCarousel images={['/assets/digital_ticketing.mp4']} />
             </div>
           </div>
         </motion.div>
@@ -164,7 +171,7 @@ export function FeaturedProjects() {
           viewport={{ once: true }}
           className="mb-16 bg-white rounded-3xl overflow-hidden border border-[#e5e5e5] hover:border-[#d4d4d4] transition-all duration-300"
         >
-          <div className="grid md:grid-cols-5 gap-8 p-12">
+          <div className="grid md:grid-cols-5 gap-8 p-6 md:p-12">
             <div className="md:col-span-3 space-y-6">
               <h3 className="text-3xl tracking-tight text-[#1a1a1a]">
                 AI-Powered Museum Guides
@@ -197,7 +204,7 @@ export function FeaturedProjects() {
                 ))}
               </div>
             </div>
-            <div className="md:col-span-2">
+            <div className="mx-auto w-[200px] md:w-[240px] md:col-span-2">
               <ProjectCarousel images={[
                 '/assets/museum_guide_1.jpg',
                 '/assets/museum_guide_2.jpg',
@@ -209,38 +216,6 @@ export function FeaturedProjects() {
           </div>
         </motion.div>
 
-        {/* Dating App Experimentation */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="bg-white rounded-3xl overflow-hidden border border-[#e5e5e5] hover:border-[#d4d4d4] transition-all duration-300"
-        >
-          <div className="grid md:grid-cols-5 gap-8 p-12">
-            <div className="md:col-span-3 space-y-6">
-              <h3 className="text-3xl tracking-tight text-[#1a1a1a]">
-                Dating App Lifecycle Experimentation
-              </h3>
-              <p className="text-lg text-[#4a4a4a] leading-relaxed">
-                Led product experimentation at Coffee Meets Bagel, optimizing user lifecycle metrics and engagement.
-              </p>
-              <p className="text-base text-[#6a6a6a] leading-relaxed">
-                Designed and ran A/B tests across acquisition, activation, and retention funnels. Drove data-informed product decisions to improve match quality and user satisfaction.
-              </p>
-              <div className="flex flex-wrap gap-2 pt-2">
-                {['A/B Testing', 'Lifecycle Optimization', 'User Engagement', 'Data-Driven Product'].map((tag) => (
-                  <span key={tag} className="px-3 py-1 bg-[#f5f5f5] rounded-full text-sm text-[#4a4a4a]">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="md:col-span-2">
-              <ProjectCarousel images={[]} />
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
