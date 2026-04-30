@@ -58,7 +58,7 @@ export function ProjectCarousel({ images }: ProjectCarouselProps) {
       return (
         <video
           src={src}
-          className="w-full h-[400px] object-cover"
+          className="w-full h-[600px] object-cover"
           autoPlay
           loop
           muted
@@ -70,7 +70,7 @@ export function ProjectCarousel({ images }: ProjectCarouselProps) {
       <img
         src={src}
         alt={alt}
-        className="w-full h-[400px] object-cover"
+        className="w-full h-[600px] object-cover"
       />
     );
   };
