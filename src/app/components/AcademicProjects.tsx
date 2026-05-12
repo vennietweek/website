@@ -8,7 +8,7 @@ export function AcademicProjects() {
       title: 'Multimodal Emotion Recognition',
       description: 'Exploring multimodal fusion techniques for enhanced emotion recognition using deep learning.',
       details: 'Research project investigating how combining multiple data modalities (text, audio, visual) can improve emotion detection accuracy in machine learning systems.',
-      tags: ['Deep Learning', 'Multimodal Fusion', 'Emotion AI', 'Neural Networks'],
+      tags: ['Machine Learning', 'Deep Learning', 'Multimodal Fusion', 'Emotion AI', 'Neural Networks'],
       pdf: '/documents/Exploring Multimodal Fusion for Enhanced Emotion Recognition.pdf'
     },
     {

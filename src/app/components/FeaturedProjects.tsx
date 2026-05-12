@@ -30,23 +30,28 @@ export function FeaturedProjects() {
         >
           <div className="grid md:grid-cols-5 gap-8 p-6 md:gap-12 md:p-16">
             <div className="md:col-span-3 space-y-6">
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-[#1a1a1a] text-white rounded-full text-sm">AI-Enabled Development</span>
+                <span className="px-3 py-1 bg-[#1a1a1a] text-white rounded-full text-sm">Product Design</span>
+              </div>
               <h3 className="text-4xl tracking-tight text-[#1a1a1a]">Innerra</h3>
               <p className="text-xl text-[#4a4a4a] leading-relaxed">
-                A personal AI companion for reflection, memory, and emotional insight.
+                A reflective companion that remembers your emotional world.
               </p>
               <p className="text-base text-[#6a6a6a] leading-relaxed">
-                Innerra helps users turn everyday thoughts into calm, structured emotional insight over time. Built with privacy-first principles, the product uses agentic workflows and structured memory to create meaningful patterns from personal reflections.
+                Innerra helps users turn everyday thoughts into structured emotional insight over time. The product uses agentic workflows and structured memory to distill meaningful patterns from personal reflections.
               </p>
-              <div className="space-y-2 pt-4">
+              <div className="space-y-2 pt-2">
                 <p className="text-sm uppercase tracking-wider text-[#8a8a8a]">Focus Areas</p>
                 <div className="flex flex-wrap gap-2">
-                  {['Agentic Workflows', 'Structured Memory', 'Emotional Insight', 'Privacy-First Design', 'Supabase + Vercel'].map((tag) => (
+                  {['Agentic Workflows', 'Structured Memory', 'Emotional Insight', 'Supabase + Vercel'].map((tag) => (
                     <span key={tag} className="px-3 py-1 bg-[#f5f5f5] rounded-full text-sm text-[#4a4a4a]">
                       {tag}
                     </span>
                   ))}
                 </div>
               </div>
+              <p className="text-sm text-[#8a8a8a] italic">Designed, built, and shipped solo — from concept to production using AI-assisted development.</p>
               <Button
                 asChild
                 className="mt-2 bg-[#1a1a1a] text-white hover:bg-[#2a2a2a] rounded-xl"
@@ -57,14 +62,8 @@ export function FeaturedProjects() {
                 </a>
               </Button>
             </div>
-            <div className="mx-auto w-[200px] md:w-[240px] md:col-span-2">
-              <ProjectCarousel images={[
-                '/assets/innerra_1.PNG',
-                '/assets/innerra_2.PNG',
-                '/assets/innerra_3.PNG',
-                '/assets/innerra_4.PNG',
-                '/assets/innerra_5.PNG'
-              ]} />
+            <div className="mx-auto w-[240px] md:w-[280px] md:col-span-2">
+              <ProjectCarousel images={['/assets/innerra.mp4']} />
             </div>
           </div>
         </motion.div>
@@ -79,14 +78,18 @@ export function FeaturedProjects() {
         >
           <div className="grid md:grid-cols-5 gap-8 p-6 md:p-12">
             <div className="md:col-span-3 space-y-6">
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-[#1a1a1a] text-white rounded-full text-sm">Engineering</span>
+                <span className="px-3 py-1 bg-[#1a1a1a] text-white rounded-full text-sm">Research & Evaluation</span>
+              </div>
               <h3 className="text-3xl tracking-tight text-[#1a1a1a]">
                 Internal RAG Knowledge Assistant
               </h3>
               <p className="text-lg text-[#4a4a4a] leading-relaxed">
-                Built and evaluated a Retrieval-Augmented Generation system for internal onboarding knowledge search at GIC.
+                An enterprise RAG system built to surface accurate, contextual knowledge for new hire onboarding at GIC.
               </p>
               <p className="text-base text-[#6a6a6a] leading-relaxed">
-                Led end-to-end development of an enterprise RAG system, focusing on groundedness evaluation, retrieval optimization, and LLM-as-judge frameworks to ensure accurate, contextual knowledge delivery.
+                Led end-to-end development of a multi-step agentic reasoning pipeline — from chunking strategy to retrieval and generation. Navigated real-world trade-offs across quality, latency, cost, and reliability, and built an LLM-as-judge evaluation framework to rigorously benchmark groundedness at each stage.
               </p>
               <div className="space-y-2 pt-2">
                 <div className="flex flex-wrap gap-2">
@@ -107,7 +110,7 @@ export function FeaturedProjects() {
                 </a>
               </Button>
             </div>
-            <div className="mx-auto w-[200px] md:w-[240px] md:col-span-2">
+            <div className="mx-auto w-[240px] md:w-[280px] md:col-span-2">
               <ProjectCarousel images={[
                 '/assets/gic_1.png',
                 '/assets/gic_2.png'
@@ -126,6 +129,10 @@ export function FeaturedProjects() {
         >
           <div className="grid md:grid-cols-5 gap-8 p-6 md:p-12">
             <div className="md:col-span-3 space-y-6">
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-[#1a1a1a] text-white rounded-full text-sm">Product Management</span>
+                <span className="px-3 py-1 bg-[#1a1a1a] text-white rounded-full text-sm">System Design</span>
+              </div>
               <h3 className="text-3xl tracking-tight text-[#1a1a1a]">
                 Digital Ticketing Platform
               </h3>
@@ -157,7 +164,7 @@ export function FeaturedProjects() {
                 ))}
               </div>
             </div>
-            <div className="mx-auto w-[200px] md:w-[240px] md:col-span-2">
+            <div className="mx-auto w-[240px] md:w-[280px] md:col-span-2">
               <ProjectCarousel images={['/assets/digital_ticketing.mp4']} />
             </div>
           </div>
@@ -173,6 +180,9 @@ export function FeaturedProjects() {
         >
           <div className="grid md:grid-cols-5 gap-8 p-6 md:p-12">
             <div className="md:col-span-3 space-y-6">
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-[#1a1a1a] text-white rounded-full text-sm">Product Management</span>
+              </div>
               <h3 className="text-3xl tracking-tight text-[#1a1a1a]">
                 AI-Powered Museum Guides
               </h3>
@@ -204,7 +214,7 @@ export function FeaturedProjects() {
                 ))}
               </div>
             </div>
-            <div className="mx-auto w-[200px] md:w-[240px] md:col-span-2">
+            <div className="mx-auto w-[240px] md:w-[280px] md:col-span-2">
               <ProjectCarousel images={[
                 '/assets/museum_guide_1.jpg',
                 '/assets/museum_guide_2.jpg',

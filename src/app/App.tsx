@@ -1,5 +1,5 @@
 import { Navigation } from './components/Navigation';
-import { Hero } from './components/Hero';
+import { Intro } from './components/Intro';
 import { FeaturedProjects } from './components/FeaturedProjects';
 import { ExperienceHighlights } from './components/ExperienceHighlights';
 import { AcademicProjects } from './components/AcademicProjects';
@@ -11,10 +11,10 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#fafaf9]">
       <Navigation />
-      <Hero />
+      <Intro />
       <FeaturedProjects />
-      <ExperienceHighlights />
       <AcademicProjects />
+      <ExperienceHighlights />
       <About />
       <Resume />
       <Contact />
