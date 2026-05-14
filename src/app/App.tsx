@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Navigation } from './components/Navigation';
 import { Intro } from './components/Intro';
 import { FeaturedProjects } from './components/FeaturedProjects';
@@ -19,5 +20,6 @@ export default function App() {
       <Resume />
       <Contact />
     </div>
+    <Analytics />
   );
 }
