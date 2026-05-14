@@ -19,7 +19,7 @@ export default function App() {
       <About />
       <Resume />
       <Contact />
+      <Analytics />
     </div>
-    <Analytics />
   );
 }
