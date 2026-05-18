@@ -56,7 +56,7 @@ export function FeaturedProjects() {
                 asChild
                 className="mt-2 bg-[#1a1a1a] text-white hover:bg-[#2a2a2a] rounded-xl"
               >
-                <a href="https://innerra.vercel.app" target="_blank" rel="noopener noreferrer">
+                <a href="https://innerra.app" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 size-4" />
                   Try Innerra
                 </a>
