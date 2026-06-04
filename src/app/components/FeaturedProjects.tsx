@@ -39,7 +39,7 @@ export function FeaturedProjects() {
                 A reflective companion that remembers your emotional world.
               </p>
               <p className="text-base text-[#6a6a6a] leading-relaxed">
-                Innerra helps users turn everyday thoughts into structured emotional insight over time. The product uses agentic workflows and structured memory to distill meaningful patterns from personal reflections.
+                Innerra helps users turn everyday thoughts into structured emotional insight over time. The product uses agent architecture and structured memory to distill meaningful patterns from personal reflections.
               </p>
               <div className="space-y-2 pt-2">
                 <p className="text-sm uppercase tracking-wider text-[#8a8a8a]">Focus Areas</p>
